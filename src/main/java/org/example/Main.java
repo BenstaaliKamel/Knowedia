@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 import static com.mongodb.client.model.Filters.eq;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void data_base_connexion() {
         System.out.println("Hello world!");
         // Connection string for MongoDB (change as needed for your MongoDB instance)
         String connectionString = "mongodb://localhost:27017";
@@ -49,6 +49,8 @@ public class Main {
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
         }
-
+    }
+    public static void main(String[] args) {
+        data_base_connexion();
     }
 }
